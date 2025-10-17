@@ -275,3 +275,45 @@ Payment endpoints are integrated with secure, third-party gateways that follow P
 - Maintaining System Reliability: Reduces downtime and safeguards the platform from attacks or data corruption.
 
 - Building User Trust: A secure application increases confidence and encourages long-term platform use.
+
+## CI/CD Pipeline
+### 1. What is CI/CD?
+
+CI/CD (Continuous Integration and Continuous Deployment) is a development practice that automates the process of testing, building, and deploying applications. It ensures that code changes are automatically integrated, tested, and delivered to production efficiently and reliably.
+
+### 2. Importance of CI/CD in This Project
+
+Implementing CI/CD in the Airbnb Clone project improves development speed, collaboration, and product reliability.
+
+Continuous Integration (CI): Automatically tests and integrates new code changes into the main branch to catch bugs early.
+
+Continuous Deployment (CD): Ensures new features and fixes are quickly and safely deployed to production without manual intervention.
+Together, they reduce errors, maintain consistent code quality, and provide a smooth user experience during updates.
+
+### 3. Tools Used
+
+GitHub Actions: Automates workflows such as running tests, linting, and deploying code directly from the repository.
+
+Docker: Provides consistent development and deployment environments through containerization.
+
+Docker Compose: Simplifies managing multi-service environments like frontend, backend, and database containers.
+
+CI/CD Pipeline Example:
+
+Developer pushes code to GitHub →
+
+GitHub Actions runs tests automatically →
+
+If all tests pass, Docker builds the image →
+
+The new version is deployed to the server or cloud environment.
+
+### 4. Benefits
+
+Reduces human error through automation
+
+Speeds up feature delivery and updates
+
+Enhances team collaboration and transparency
+
+Ensures every deployment is stable, tested, and consistent
