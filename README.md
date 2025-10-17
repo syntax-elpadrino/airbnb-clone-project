@@ -90,3 +90,21 @@ Defining color and typography upfront ensures brand consistency and accessibilit
   
 ### Scrum Master
 - **Responsibilities**: Facilitates agile processes, removes blockers, and organizes meetings to ensure smooth team collaboration.
+
+## UI Component Patterns
+
+### Planned Components
+
+#### Navbar
+- **Components**: Logo, Search bar, User navigation, Responsive menu
+- **Responsiveness**: Ensures mobile and tablet compatibility
+
+#### Property Card
+- **Components**: Property image, Basic details (price, location, rating), Favorite button
+- **Responsiveness**: Grid layout with cards rearranged based on screen size
+
+#### Footer
+- **Components**: Site links, Company information, Social media links, Copyright information
+- **Responsiveness**: Stacked layout for small screens
+
+Each component will be designed for reusability and consistency across the application.
