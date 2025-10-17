@@ -108,3 +108,106 @@ Defining color and typography upfront ensures brand consistency and accessibilit
 - **Responsiveness**: Stacked layout for small screens
 
 Each component will be designed for reusability and consistency across the application.
+
+## 🗃️ Database Design
+
+### Entities and Relationships
+
+Below is an overview of the main entities and how they relate to one another in the system.
+
+---
+
+## **1. Users**
+
+**Fields:**
+
+* `id` – Unique identifier (Primary Key)
+* `name` – Full name of the user
+* `email` – Unique email for login
+* `password_hash` – Encrypted password
+* `role` – Defines whether the user is an admin, host, or guest
+
+**Relationships:**
+
+* A **User** can list multiple **Properties**
+* A **User** can make multiple **Bookings**
+* A **User** can leave multiple **Reviews**
+
+---
+
+## **2. Properties**
+
+**Fields:**
+
+* `id` – Unique identifier (Primary Key)
+* `title` – Name or headline of the property
+* `description` – Detailed information about the property
+* `price_per_night` – Cost per night
+* `user_id` – Foreign Key linking to the property owner (User)
+
+**Relationships:**
+
+* A **Property** belongs to one **User**
+* A **Property** can have many **Bookings**
+* A **Property** can receive multiple **Reviews**
+
+
+
+## **3. Bookings**
+
+**Fields:**
+
+* `id` – Unique identifier (Primary Key)
+* `user_id` – Foreign Key (Guest making the booking)
+* `property_id` – Foreign Key (Property being booked)
+* `check_in_date` – Start of stay
+* `check_out_date` – End of stay
+
+**Relationships:**
+
+* A **Booking** belongs to one **User**
+* A **Booking** belongs to one **Property**
+* A **Booking** can have one **Payment**
+
+---
+
+## **4. Reviews**
+
+**Fields:**
+
+* `id` – Unique identifier (Primary Key)
+* `user_id` – Foreign Key (Reviewer)
+* `property_id` – Foreign Key (Reviewed property)
+* `rating` – Numeric rating (1–5)
+* `comment` – Text feedback
+
+**Relationships:**
+
+* A **Review** belongs to one **User**
+* A **Review** belongs to one **Property**
+
+---
+
+## **5. Payments**
+
+**Fields:**
+
+* `id` – Unique identifier (Primary Key)
+* `booking_id` – Foreign Key (Linked Booking)
+* `amount` – Total amount paid
+* `payment_method` – e.g., card, PayPal, M-Pesa
+* `status` – Payment status (pending, completed, failed)
+
+**Relationships:**
+
+* A **Payment** belongs to one **Booking**
+
+
+
+## **Summary of Relationships**
+
+* **User ↔ Property:** One-to-Many
+* **User ↔ Booking:** One-to-Many
+* **Property ↔ Booking:** One-to-Many
+* **Property ↔ Review:** One-to-Many
+* **Booking ↔ Payment:** One-to-One
