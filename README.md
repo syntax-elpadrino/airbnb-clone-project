@@ -240,3 +240,38 @@ Users can search for properties using filters such as location, price range, ame
 ## 7. Responsive UI/UX
 
 The frontend design ensures the platform works seamlessly across devices — desktop, tablet, and mobile. This feature prioritizes accessibility, speed, and usability, making navigation simple and enjoyable for all users.
+
+## API Security
+### 1. Authentication
+
+The system uses JWT (JSON Web Token) authentication to verify user identities before granting access to protected routes. Each token is unique to a user session and prevents unauthorized access. This ensures that only verified users can perform sensitive operations like booking a property or managing listings.
+
+### 2. Authorization
+
+After authentication, role-based authorization ensures that users can only access resources that match their permissions. For example, guests can make bookings, while hosts can add or edit property listings. This separation of privileges helps maintain data integrity and prevents misuse of the system.
+
+### 3. Rate Limiting
+
+To prevent API abuse and denial-of-service (DoS) attacks, rate limiting is implemented. It restricts the number of requests a user or IP address can make in a specific time frame, protecting the system from overload and ensuring fair usage among all users.
+
+### 4. Data Encryption
+
+Sensitive data such as passwords and payment details are encrypted both in transit and at rest. Using HTTPS (SSL/TLS) ensures secure data transfer, while encryption algorithms protect information stored in the database. This prevents unauthorized access even if data is intercepted or breached.
+
+### 5. Input Validation & Sanitization
+
+All API inputs are validated and sanitized to prevent common vulnerabilities like SQL injection, XSS (Cross-Site Scripting), and CSRF (Cross-Site Request Forgery). This ensures that the backend processes only safe and properly formatted data.
+
+### 6. Secure Payment Handling
+
+Payment endpoints are integrated with secure, third-party gateways that follow PCI-DSS compliance standards. This adds an extra layer of protection for financial transactions and user payment information.
+
+### Why API Security is Crucial
+
+- Protecting User Data: Prevents unauthorized access to personal details like emails, passwords, and addresses.
+
+- Securing Financial Transactions: Ensures that all payment-related activities remain private and tamper-proof.
+
+- Maintaining System Reliability: Reduces downtime and safeguards the platform from attacks or data corruption.
+
+- Building User Trust: A secure application increases confidence and encourages long-term platform use.
