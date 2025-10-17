@@ -29,7 +29,7 @@ This project is a full-stack clone of the popular accommodation booking platform
 - **Containerization:** Docker  
 - **CI/CD:** GitHub Actions
   
-## UI Component Patterns
+## UI/UX Design Planning
 ### Planned Components
 #### Navbar
 - Logo  
