@@ -27,4 +27,24 @@ This project is a full-stack clone of the popular accommodation booking platform
 - **API Layer:** RESTful APIs and GraphQL  
 - **Authentication:** JWT  
 - **Containerization:** Docker  
-- **CI/CD:** GitHub Actions  
+- **CI/CD:** GitHub Actions
+  
+## UI Component Patterns
+### Planned Components
+#### Navbar
+- Logo  
+- Search bar  
+- User menu / profile dropdown  
+- Mobile-friendly navigation  
+#### Property Card
+- Image  
+- Price, location, and rating  
+- Favourite button  
+- Responsive grid layout  
+#### Footer
+- Links (About, Contact, Terms)  
+- Company information  
+- Social media icons  
+- Copyright  
+
+Each component will be reusable, accessible, and consistent across the app.
