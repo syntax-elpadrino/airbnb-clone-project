@@ -48,3 +48,45 @@ This project is a full-stack clone of the popular accommodation booking platform
 - Copyright  
 
 Each component will be reusable, accessible, and consistent across the app.
+
+## Figma Design Specifications
+### Color Styles
+- **Primary:** #FF5A5F  
+- **Secondary:** #008489  
+- **Background:** #FFFFFF  
+- **Text:** #222222  
+- **Secondary Text:** #717171  
+
+### Typography
+- **Primary Font:** Circular, Medium (500), 16px  
+- **Headings:** Circular, Bold (700), 24px–32px  
+- **Secondary Text:** Circular, Book (400), 14px  
+
+### Importance of Design Properties
+Defining color and typography upfront ensures brand consistency and accessibility. It helps developers and designers maintain alignment across all components and devices.
+
+## Project Roles and Responsibilities
+
+### Project Manager
+- **Responsibilities**: Oversees timeline, coordinates the team, and manages deliverables to ensure timely completion of project milestones.
+
+### Frontend Developers
+- **Responsibilities**: Implements UI components, ensures responsive design, and collaborates on frontend logic with backend developers.
+
+### Backend Developers
+- **Responsibilities**: Builds APIs, manages the database, implements business logic, and ensures scalability.
+
+### Designers
+- **Responsibilities**: Creates mockups, maintains design system, ensures UX quality, and collaborates with frontend developers to implement designs.
+
+### QA/Testers
+- **Responsibilities**: Writes test cases, performs testing, reports bugs, and ensures product quality.
+
+### DevOps Engineers
+- **Responsibilities**: Manages deployment, CI/CD pipeline, and server infrastructure to ensure smooth delivery and scalability.
+
+### Product Owner
+- **Responsibilities**: Defines requirements, prioritizes features, and represents stakeholders’ needs in the development process.
+  
+### Scrum Master
+- **Responsibilities**: Facilitates agile processes, removes blockers, and organizes meetings to ensure smooth team collaboration.
