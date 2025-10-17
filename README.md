@@ -211,3 +211,32 @@ Below is an overview of the main entities and how they relate to one another in 
 * **Property ↔ Booking:** One-to-Many
 * **Property ↔ Review:** One-to-Many
 * **Booking ↔ Payment:** One-to-One
+
+## Feature Breakdown
+### 1. User Management
+
+- This feature handles all user-related functionality, including registration, authentication, and profile management. It ensures secure access using JWT authentication, allowing users to sign up, log in, and manage their personal details and booking history.
+
+## 2. Property Management
+
+Hosts can list, edit, and delete their properties through this module. Each property includes details such as title, description, location, price, images, and amenities. This feature makes it easy for property owners to manage their listings efficiently.
+
+## 3. Booking System
+
+This feature enables users to reserve available properties for specific dates. It includes date selection, price calculation, and confirmation of reservations. Each booking links the user to a property, creating a unique transaction record that tracks availability and prevents double-booking.
+
+## 4. Payment Integration
+
+The payment feature allows users to securely pay for their bookings using integrated payment gateways. It tracks transaction status, ensures data encryption, and provides receipts for each confirmed booking. This adds trust and financial accountability to the platform.
+
+## 5. Review and Rating System
+
+After completing a stay, users can leave reviews and rate properties based on their experience. This feature helps maintain transparency and trust, allowing future guests to make informed decisions based on previous feedback.
+
+## 6. Search and Filtering
+
+Users can search for properties using filters such as location, price range, amenities, and ratings. This feature improves user experience by helping them quickly find listings that match their preferences and budget.
+
+## 7. Responsive UI/UX
+
+The frontend design ensures the platform works seamlessly across devices — desktop, tablet, and mobile. This feature prioritizes accessibility, speed, and usability, making navigation simple and enjoyable for all users.
