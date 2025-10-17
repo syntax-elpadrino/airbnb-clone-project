@@ -65,7 +65,7 @@ Each component will be reusable, accessible, and consistent across the app.
 ### Importance of Design Properties
 Defining color and typography upfront ensures brand consistency and accessibility. It helps developers and designers maintain alignment across all components and devices.
 
-## Project Roles and Responsibilities
+## Team Roles and Responsibilities
 
 ### Project Manager
 - **Responsibilities**: Oversees timeline, coordinates the team, and manages deliverables to ensure timely completion of project milestones.
