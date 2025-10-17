@@ -13,7 +13,7 @@ This project is a full-stack clone of the popular accommodation booking platform
 - **Secure checkout process**: Implement a secure payment gateway and booking confirmation.
 - **User authentication**: Enable account creation, login, and session management.
 
-## Tech Stack
+## Technology Stack
 
 ### Frontend
 - **Languages:** HTML, CSS, JavaScript  
